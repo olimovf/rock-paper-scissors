@@ -87,3 +87,43 @@ body {
         transform: translateY(0);
     }
 }
+
+@media (max-width: 590px) {
+    .player {
+        width: 100px;
+        height: 100px;
+        margin: 80px 40px;
+    }
+
+    .result {
+        margin: 15px auto;
+    }
+}
+
+@media (max-width: 450px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1, .result {
+        font-size: 1.3rem;
+    }
+
+    .player {
+        width: 80px;
+        height: 80px;
+        margin: 50px 20px;
+    }
+
+    @keyframes count-in {
+        0% {
+            transform: translateY(0);
+        }
+        60% {
+            transform: translateY(-40px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+}
